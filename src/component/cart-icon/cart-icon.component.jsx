@@ -6,7 +6,6 @@ import { DropdownContext } from "../../contexts/dropdown.context";
 const CartIcon = () => {
   const { dropdown, setDropdown } = useContext(DropdownContext);
 
-  console.log(dropdown);
   const handleClick = () => setDropdown(!dropdown);
 
   return (
