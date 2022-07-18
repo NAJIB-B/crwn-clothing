@@ -4,14 +4,14 @@ import { useContext } from "react";
 import { DropdownContext } from "../../contexts/dropdown.context";
 
 const CartIcon = () => {
-  const { dropdown, setDropdown } = useContext(DropdownContext);
+  const { dropdown, setDropdown, cartCount } = useContext(DropdownContext);
 
   const handleClick = () => setDropdown(!dropdown);
 
   return (
     <div className="cart-icon-container" onClick={handleClick}>
       <ShoppingIcon className="shopping-icon"></ShoppingIcon>
-      <span className="item-count">0</span>
+      <span className="item-count">{cartCount}</span>
     </div>
   );
 };
