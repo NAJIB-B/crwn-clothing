@@ -8,16 +8,24 @@ import {
   Arrow,
   Price,
 } from "./checkout-item.style.jsx";
-import { useContext } from "react";
-import { DropdownContext } from "../../contexts/dropdown.context";
+import { useSelector } from "react-redux";
+import { selectCartItems } from "../../store/dropdown/dropdown.selector.js";
+import {
+  addQuantity,
+  reduceQuantity,
+  removeItem,
+} from "../../store/dropdown/dropdown.action.js";
+import { useDispatch } from "react-redux";
 
 const CheckoutItem = ({ cartItem }) => {
+  const dispatch = useDispatch();
+  const cartItems = useSelector(selectCartItems);
   const { name, imageUrl, quantity, price, id } = cartItem;
-  const { addQuantity, reduceQuantity, removeItem } =
-    useContext(DropdownContext);
-  const addItemQuantity = () => addQuantity(cartItem);
-  const reduceItemQuantity = () => reduceQuantity(cartItem);
-  const removeCartItem = () => removeItem(cartItem);
+
+  const addItemQuantity = () => dispatch(addQuantity(cartItems, cartItem));
+  const reduceItemQuantity = () =>
+    dispatch(reduceQuantity(cartItems, cartItem));
+  const removeCartItem = () => dispatch(removeItem(cartItems, cartItem));
 
   return (
     <CheckoutItemContainer>
@@ -33,7 +41,7 @@ const CheckoutItem = ({ cartItem }) => {
         <Arrow onClick={addItemQuantity}>&#10095;</Arrow>
       </Quantity>
       <Price>{price}</Price>
-      <RemoveButton>&#10005;</RemoveButton>
+      <RemoveButton onClick={removeCartItem}>&#10005;</RemoveButton>
     </CheckoutItemContainer>
   );
 };
