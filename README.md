@@ -1,7 +1,16 @@
-# Getting Started with Create React App
+# crwn clothing 
+Crwn clothing is an e-commerce website made with react.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Demo
 
+You can check it out here https://crownclothingg.netlify.app/
+
+# features 
+
+- login with firebase 
+- Add to cart
+-Goto check out
+-Navigate through different stores
 ## Available Scripts
 
 In the project directory, you can run:
