@@ -36,3 +36,4 @@ export function* onCheckUserSession() {
 export function* userSaga() {
   yield all([call(onCheckUserSession)]);
 }
+// skipped sign in and sign out with redux saga and starting serverless functions
