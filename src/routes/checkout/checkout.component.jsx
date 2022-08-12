@@ -4,6 +4,7 @@ import {
   HeaderBlock,
   Total,
 } from "./checkout.style.jsx";
+import PaymentForm from "../../component/payment-form/payment-form.component.jsx";
 
 import { useSelector } from "react-redux";
 import CheckoutItem from "../../component/checkout-item/checkout-item.component";
@@ -40,6 +41,7 @@ const Checkout = () => {
       ))}
 
       <Total>Total:${total}</Total>
+      <PaymentForm></PaymentForm>
     </CheckoutContainer>
   );
 };
