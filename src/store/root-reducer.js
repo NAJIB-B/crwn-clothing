@@ -5,6 +5,6 @@ import { dropdownReducer } from "./dropdown/dropdown.reducer";
 
 export const rootReducer = combineReducers({
   user: userReducer,
-  categories: categoriesReducer,
-  dropdown: dropdownReducer,
+  // categories: categoriesReducer,
+  // dropdown: dropdownReducer,
 });
