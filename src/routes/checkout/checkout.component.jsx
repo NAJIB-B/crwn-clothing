@@ -4,7 +4,7 @@ import {
   HeaderBlock,
   Total,
 } from "./checkout.style.jsx";
-import PaymentForm from "../../component/payment-form/payment-form.component.jsx";
+import PaymentForm from "../../component/payment-form/payment-form.component";
 
 import { useSelector } from "react-redux";
 import CheckoutItem from "../../component/checkout-item/checkout-item.component";

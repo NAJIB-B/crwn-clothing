@@ -1,8 +1,4 @@
-import {
-  CartIconContainer,
-  ShoppingIcon,
-  ItemCount,
-} from "./cart-icon.style.jsx";
+import { CartIconContainer, ShoppingIcon, ItemCount } from "./cart-icon.style";
 // import { ReactComponent as ShoppingIcon } from "../../assets/shopping-bag.svg";
 
 import { useSelector } from "react-redux";
