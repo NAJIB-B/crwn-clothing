@@ -1,7 +1,8 @@
 import { createSelector } from "reselect";
 import { dropdownState } from "./dropdown.reducer";
 import { CartItem } from "./dropdown.types";
-export const selectCartReducer = (state): dropdownState => state.dropdown;
+import { RootState } from "../store";
+export const selectCartReducer = (state: RootState): dropdownState => state.dropdown;
 
 export const selectCartItems = createSelector(
   [selectCartReducer],

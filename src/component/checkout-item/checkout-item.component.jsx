@@ -9,12 +9,12 @@ import {
   Price,
 } from "./checkout-item.style.jsx";
 import { useSelector } from "react-redux";
-import { selectCartItems } from "../../store/dropdown/dropdown.selector.js";
+import { selectCartItems } from "../../store/dropdown/dropdown.selector";
 import {
   addQuantity,
   reduceQuantity,
   removeItem,
-} from "../../store/dropdown/dropdown.action.js";
+} from "../../store/dropdown/dropdown.action";
 import { useDispatch } from "react-redux";
 
 const CheckoutItem = ({ cartItem }) => {

@@ -37,7 +37,7 @@ export const fetchCategoriesSuccess = withMatcher(
       categoriesArray
     )
 );
-export const fetchCategorieFailed = withMatcher(
+export const fetchCategoriesFailed = withMatcher(
   (error: Error): FetchCategoriesFailed =>
     createAction(CATEGORIES_ACTION_TYPES.FETCH_CATEGORIES_FAILED, error)
 );

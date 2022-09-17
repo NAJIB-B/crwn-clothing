@@ -11,7 +11,7 @@ import CheckoutItem from "../../component/checkout-item/checkout-item.component"
 import {
   selectCartItems,
   selectTotal,
-} from "../../store/dropdown/dropdown.selector.js";
+} from "../../store/dropdown/dropdown.selector";
 
 const Checkout = () => {
   const cartItems = useSelector(selectCartItems);

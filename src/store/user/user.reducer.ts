@@ -39,6 +39,8 @@ export const userReducer = (state = INITIAL_STATE, action: AnyAction) => {
       error: action.payload,
     };
   }
+
+  return state;
   // switch (type) {
   //   case USER_ACTION_TYPES.SIGN_IN_SUCCESS:
   //     return {

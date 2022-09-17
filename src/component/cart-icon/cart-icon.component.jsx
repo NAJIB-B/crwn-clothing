@@ -7,11 +7,11 @@ import {
 
 import { useSelector } from "react-redux";
 
-import { setDropdown } from "../../store/dropdown/dropdown.action.js";
+import { setDropdown } from "../../store/dropdown/dropdown.action";
 import {
   selectDropdown,
   selectCartCount,
-} from "../../store/dropdown/dropdown.selector.js";
+} from "../../store/dropdown/dropdown.selector";
 import { useDispatch } from "react-redux";
 
 const CartIcon = () => {

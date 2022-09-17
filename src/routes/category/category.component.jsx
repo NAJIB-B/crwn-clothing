@@ -6,7 +6,7 @@ import Spinner from "../../component/spinner/spinner.component.jsx";
 import {
   selectCategoriesMap,
   selectIsCategoriesLoading,
-} from "../../store/categories/category.selector.js";
+} from "../../store/categories/category.selector";
 import ProductCard from "../../component/product-card/product-card.component";
 
 const Category = () => {
