@@ -34,6 +34,7 @@ export function* getSnapshotFromUserAuth(
       additionalDetails
     );
     if (userSnapshot) {
+      console.log(userSnapshot);
       yield* put(
         signInSuccess({ id: userSnapshot.id, ...userSnapshot.data() })
       );
